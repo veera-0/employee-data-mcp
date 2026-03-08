@@ -58,8 +58,7 @@ app.all("/mcp", async (req,res) => {
 
 app.get("/health", async (_req, res) => {
   const checks = {
-    database: false,
-    ticketingApi: false,
+    database: false
   };
 
   try {
