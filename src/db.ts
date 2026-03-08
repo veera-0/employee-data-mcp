@@ -45,7 +45,7 @@ export async function searchEmployees(
     return result.rows;
 }
 
-export async function getProjectsBystatus(
+export async function getProjectsByStatus(
     status: string
 ): Promise<Project[]> {
     const result = await pool.query<Project>(
